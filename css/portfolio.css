@@ -1,0 +1,182 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.2rem 1fr auto;
+    grid-template-areas: "header" "article" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */
+
+/* ===== MYSELF/SHORTPARA ===== */
+#shortpara {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    padding: 50px 20px;
+    color: white;
+}
+
+/* ===== MYSELF/SHORTPARA : HEADING ===== */
+#shortpara h1 {
+    order: 1;
+    margin: 0 0 35px;
+    text-align: center;
+}
+
+
+/* ===== MYSELF/SHORTPARA : FIGURE  ===== */
+#shortpara figure {
+    order: 2;
+    margin: 0 0 30px;
+
+}
+#shortpara figure img {
+    display: block;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border-radius: 50%;
+    display: flex;
+    animation: floating 2s infinite;
+    box-shadow: aqua 0px 0px 40px 0px;
+    margin-bottom: 30px;
+}
+
+/* ===== END MYSELF/SHORTPARA : FIGURE ===== */
+
+/* ===== MYSELF/SHORTPARA : ASIDE ===== */
+
+#shortpara aside {
+    order: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#shortpara p {
+    width: 500px;
+    max-width: 90vw;
+    margin: 0;
+    text-align: center;
+}
+
+/* ===== MYSELF/SHORTPARA : SECTION/SOCIALMEDIA ===== */
+#socialmedia {
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+    gap: 15px;
+    justify-content: center;
+    animation: slideup 1s;
+}
+
+#socialmedia a {
+    border-radius: 50%;
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+#socialmedia a i {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px white;
+}
+
+#socialmedia a:hover {
+    transition: 1s;
+    background: rgba(0, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: #0f0f23;
+}
+
+/* ===== ENDMYSELF/SHORTPARA : SECTION/SOCIALMEDIA ===== */
+
+/* ===== MYSELF/SHORTPARA : DOWNLOAD CV ===== */
+
+.cv {
+    padding: 0;
+    margin-top: 20px;
+}
+
+#downloadcv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 12px 28px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 40px;
+    width: 120px;
+    animation: slideup 1s;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    box-shadow: 0px 0px 5px white;
+}
+
+#downloadcv:hover {
+    transition: 1s;
+    background: rgba(0, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: #0f0f23;
+}
+
+/* ===== END MYSELF/SHORTPARA : DOWNLOAD CV ===== */
+
+/* ===== ANIMATION ===== */
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideup {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== END ANIMATION ===== */

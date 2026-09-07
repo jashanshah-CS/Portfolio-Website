@@ -1,0 +1,125 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.2rem 1fr;
+    grid-template-areas: "header" "about" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */
+
+/* ===== ABOUT ME ===== */
+.about {
+    grid-area: about;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* ===== ABOUT ME : IMAGE ===== */
+.about img {
+    border-radius: 40px;
+    box-shadow: aqua 0px 0px 40px 0px;
+    animation: floating 2s infinite;
+}
+
+/* ===== END ABOUT ME : IMAGE ===== */
+
+/* ===== ABOUT ME : HEADER TEXT ===== */
+.about div h2 {
+    text-align: left;
+    line-height: 1rem;
+    font-size: 4rem;
+    animation: slideleft 1s;
+}
+
+.about div h3 {
+    font-size: 2.5rem;
+    margin: -15px 0px;
+    line-height: 1rem;
+    animation: slideleft 1s;
+}
+
+/* ===== END ABOUT ME : HEADER TEXT ===== */
+
+/* ===== ABOUT ME : TEXT ===== */
+#content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 600px;
+}
+
+#content a {
+    color: aqua;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+#content a:hover {
+    text-decoration: underline;
+}
+
+#shorttext {
+    animation: slideleft 1s;
+}
+
+/* ===== END ABOUT ME : TEXT ===== */
+
+/* ===== END ABOUT ME ===== */
+
+/* ===== SLIDES/ANIMATION ===== */
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideright {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* ===== END SLIDES/ANIMATION ===== */

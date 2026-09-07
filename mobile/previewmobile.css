@@ -1,0 +1,11 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "preview" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */

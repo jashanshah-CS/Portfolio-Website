@@ -1,0 +1,139 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.2rem 1fr;
+    grid-template-areas: "header" "links" "blog" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */
+
+/* ===== BLOG ARTICLE ===== */
+
+.monthselection{
+    grid-area: links;
+    font-size: 1.2rem;
+    margin-top: 130px;
+    margin-left: 10px;
+    width: 300px;
+    height: 40px;
+    animation: slidedown 1s;
+}
+
+section{
+    grid-area: blog;
+}
+
+.blogpostsheading{
+    font-size: 2.5rem;
+    text-align: center;
+    color: aqua;
+    font-weight: 900;
+    animation: slidedown 1s;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: black;
+    padding: 20px;
+    margin: auto auto;
+    margin-bottom: 90px;
+    overflow: hidden;
+    animation: slidedown 1s;
+}
+
+.box {
+    background: aqua;
+    color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+.date {
+    text-align: right;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 900;
+}
+
+.text {
+    font-size: 16px;
+    margin-top: -0.4rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 260px;
+    font-weight: 400;
+    text-align: left;
+    overflow-wrap: break-word;
+}
+
+.blog hr {
+    border: none;
+    border-top: 4px solid white;
+    margin: 0;
+}
+
+/* ===== END BLOG ARTICLE ===== */
+
+/* ===== LOGIN LOGOUT BUTTON ===== */
+.loginlogoutbutton {
+    grid-area: links;
+    font-size: 2rem;
+    color: white;
+    margin-left: 10px;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    text-decoration: none;
+    animation: slidedown 1s;
+}
+.loginlogoutbutton:hover{
+    text-decoration: underline aqua;
+    color: aqua;
+}
+/* ===== END LOGIN LOGOUT BUTTON ===== */
+
+/* ===== ADD ENTRY BUTTON ===== */
+.addEntrybutton {
+    grid-area: links;
+    font-size: 2rem;
+    color: white;
+    margin-left: 10px;
+    margin-top: 80px;
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    animation: slidedown 1s;
+}
+.addEntrybutton:hover{
+    text-decoration: underline aqua;
+    color: aqua;
+}
+/* ===== END ADD ENTRY BUTTON ===== */
+
+/* ===== ANIMATION ===== */
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== END ANIMATION ===== */

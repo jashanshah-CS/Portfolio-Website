@@ -1,0 +1,133 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.2rem 1fr;
+    grid-template-areas: "header" "contact" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */
+
+/* ===== CONTACT ===== */
+
+.contact{
+    grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideleft 1s;
+}
+
+.contactform form {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    width: 400px;
+}
+
+.contactform input,
+.contactform textarea {
+    padding: 10px;
+    border-radius: 10px;
+    resize: none;
+}
+
+.contactform button {
+    padding: 10px;
+    border-radius: 8px;
+    background: aqua;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contactform button:hover {
+    background: orange;
+}
+
+/* ===== END CONTACT ===== */
+
+/* ===== SOCIALMEDIA ===== */
+.socialmedia {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    align-items: center;
+    animation: slideup 1s;
+}
+.socialmedia div{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.socialmedia a {
+    border-radius: 50%;
+    font-size: 36px;
+    text-decoration: none;
+    color: white;
+}
+
+.socialmedia a i {
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px white;
+}
+
+.socialmedia a:hover {
+    transition: 1s;
+    background: rgba(0, 255, 255, 0.9);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    border-color: rgba(0, 255, 255, 0.8);
+    color: #0f0f23;
+}
+
+/* ===== SOCIALMEDIA ===== */
+
+/* ===== ANIMATION ===== */
+
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideright {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== END ANIMATION ===== */

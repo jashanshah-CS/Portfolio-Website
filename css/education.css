@@ -1,0 +1,168 @@
+/* ===== CONTAINER ===== */
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6.2rem 1fr;
+    grid-template-areas: "header" "exper" "footer";
+    gap: 10px;
+    min-height: 100vh;
+}
+
+/* ===== END CONTAINER ===== */
+
+/* ===== EXPERIENCE ===== */
+
+#highlights {
+    grid-area: exper;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* ===== EXPERIENCE : MY JOURNEY ===== */
+#highlights h1 {
+    font-size: 4rem;
+    animation: slidedown 1s;
+}
+
+/* ===== END EXPERIENCE : MY JOURNEY ===== */
+
+/* ===== EXPERIENCE : ROWS & COLS ===== */
+#highlights .row1,
+#highlights .row2 {
+    display: flex;
+    gap: 100px;
+    padding: 30px 50px;
+    justify-content: center;
+}
+
+/* ===== END EXPERIENCE : ROWS & COLS ===== */
+
+/* ===== EXPERIENCE : TITLES ===== */
+#highlights .titles {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/* ===== END EXPERIENCE : TITLES ===== */
+
+/* ===== EXPERIENCE : BOX ===== */
+#highlights .educationbox {
+    border-left: 2px solid aqua;
+    display: flex;
+}
+
+/* ===== END EXPERIENCE : BOX ===== */
+
+/* ===== EXPERIENCE : CONTENT ===== */
+#highlights .educationcontent {
+    padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#highlights .slideanimationright {
+    animation: slideright 1s;
+}
+
+#highlights .slideanimationleft {
+    animation: slideleft 1s;
+}
+
+#highlights .textcontent {
+    border: 3px solid aqua;
+    border-radius: 6px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    max-width: 1500px;
+}
+
+#highlights .textcontent a {
+    text-decoration: none;
+}
+
+#highlights .textcontent a:hover {
+    text-decoration: underline;
+    color: aqua;
+}
+
+#highlights .textcontent::before {
+    content: '';
+    width: 0;
+    height: 100%;
+    margin: -10px -10px;
+    border-radius: 6px;
+    z-index: -1;
+    position: absolute;
+    transition: 1s;
+}
+
+#highlights .textcontent:hover::before {
+    width: 100%;
+    background: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.4);
+}
+
+#highlights .date {
+    font-size: 1rem;
+    color: aqua;
+    padding-bottom: 20px;
+}
+
+#highlights .date i {
+    padding-right: 10px;
+}
+
+#highlights .textcontent h3 {
+    font-size: 1.6rem;
+}
+
+/* ===== END EXPERIENCE : CONTENT ===== */
+
+/* ===== END EXPERIENCE ===== */
+
+/* ===== SLIDES/ANIMATION ===== */
+@keyframes slideleft {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slideright {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes slidedown {
+    from {
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===== END SLIDES/ANIMATION ===== */

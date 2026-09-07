@@ -1,0 +1,31 @@
+/* ===== MEDIA QUERY ===== */
+@media screen and (max-width: 768px) {
+    .footer {
+        grid-area: footer;
+        /* display: flex; */
+        box-shadow: aqua 0px 0px 10px 0px;
+        background-color: rgba(0, 0, 0, 0.638);
+    }
+
+    .footer p {
+        font-size: 1.5rem;
+        padding-left: 10px;
+    }
+
+    .footer a {
+        margin-left: 30px;
+        font-size: 2rem;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer a:hover {
+        text-decoration: underline aqua;
+        color: aqua;
+        transition: 1s;
+    }
+}
+
+/* ===== END MEDIA QUERY ===== */

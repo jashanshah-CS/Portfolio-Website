@@ -1,0 +1,65 @@
+/* ===== MEDIA QUERY ===== */
+@media screen and (max-width: 768px) {
+
+    /* ===== CONTAINER ===== */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "about" "footer";
+        gap: 10px;
+        min-height: 100vh;
+    }
+
+    /* ===== END CONTAINER ===== */
+
+
+    /* ===== ABOUT ME ===== */
+    .about {
+        grid-area: about;
+        flex-direction: column;
+        padding-top: 25px;
+        width: auto;
+    }
+
+    /* ===== ABOUT ME : IMAGE ===== */
+    .about img {
+        margin-left: 45px;
+        border-radius: 40px;
+        box-shadow: aqua 0px 0px 40px 0px;
+        animation: floating 2s infinite;
+    }
+
+    /* ===== END ABOUT ME : IMAGE ===== */
+
+
+    /* ===== ABOUT ME : HEADER TEXT ===== */
+    .about div h2 {
+        font-size: 4rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: slideleft 1s;
+    }
+
+    .about div h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2.5rem;
+        line-height: 1rem;
+        animation: slideleft 1s;
+    }
+
+    /* ===== END ABOUT ME : HEADER TEXT ===== */
+
+    #content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 80%;
+    padding-left: 50px;
+}
+}
+
+/* ===== END MEDIA QUERY ===== */

@@ -1,0 +1,63 @@
+@media screen and (max-width: 768px) {
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas: "header" "techskills" "devtools" "cloud" "nontechskills" "footer";
+        min-height: 100vh;
+        gap: 10px;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .techskills,
+    .nontechskills,
+    .devtools,
+    .cloud {
+        padding: 20px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    /* ===== CARD GRID ===== */
+    .cardgrid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 15px;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    /* ===== SKILL CARD ===== */
+    .skillcard {
+        padding: 18px 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .skillcard h2 {
+        font-size: 1rem;
+    }
+
+    .skillicon {
+        font-size: 2rem;
+    }
+
+    .progress-ring {
+        width: 70px;
+        height: 70px;
+    }
+
+    .percent-label {
+        font-size: 0.85rem;
+    }
+}
+
+/* ===== END MEDIA QUERY ===== */

@@ -1,0 +1,17 @@
+/* ===== MEDIA QUERY ===== */
+@media screen and (max-width: 768px) {
+
+    /* ===== CONTAINER ===== */
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: "header" "contact" "footer";
+        gap: 10px;
+        min-height: 100vh;
+    }
+
+    /* ===== END CONTAINER ===== */
+}
+
+/* ===== END MEDIA QUERY ===== */
