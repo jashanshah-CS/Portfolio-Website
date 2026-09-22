@@ -2,7 +2,7 @@
 
 A personal portfolio website built from scratch using HTML, CSS, JavaScript, and PHP, featuring a full blog system with authentication and post management.
 
-Live site: https://jashanshah.fwh.is
+Live site: https://jashan-shah.netlify.app
 (blog post uploads are currently non-functional on this hosting domain - see the source code here for the full implementation)
 
 ## Features
